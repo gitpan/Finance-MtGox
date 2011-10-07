@@ -1,7 +1,7 @@
 ---
 abstract: 'interact with the MtGox API'
 author:
-  - 'Michael Hendricks, C<< <michael at ndrix.org> >>'
+  - 'Michael Hendricks, C<< <michael@ndrix.org> >>'
   - 'Michael Hendricks <michael@ndrix.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
@@ -20,9 +20,12 @@ no_index:
     - inc
     - t
 requires:
+  Digest::SHA: 0
   JSON::Any: 1.25
+  MIME::Base64: 0
+  Time::HiRes: 0
   URI: 1.58
   WWW::Mechanize: 1.66
 resources:
   license: http://opensource.org/licenses/mit-license.php
-version: 0.01
+version: 0.02
