@@ -12,15 +12,15 @@ use MIME::Base64;
 
 =head1 NAME
 
-Finance::MtGox - interact with the MtGox API
+Finance::MtGox - trade Bitcoin with the MtGox API
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -69,7 +69,7 @@ sub new {
     }
 
     $args->{json} = JSON::Any->new;
-    $args->{mech} = WWW::Mechanize->new;
+    $args->{mech} = WWW::Mechanize->new(stack_depth => 0);
     return bless $args, $class;
 }
 
