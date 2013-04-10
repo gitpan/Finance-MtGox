@@ -28,4 +28,4 @@ requires:
   WWW::Mechanize: 1.66
 resources:
   license: http://opensource.org/licenses/mit-license.php
-version: 0.03
+version: 0.04
